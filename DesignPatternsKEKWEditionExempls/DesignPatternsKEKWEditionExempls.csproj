@@ -8,9 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
     <Folder Include="Events\" />
-    <Folder Include="Pages\" />
     <Folder Include="Messages\" />
   </ItemGroup>
 

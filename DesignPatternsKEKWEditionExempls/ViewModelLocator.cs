@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatternsKEKWEditionExempls.Services;
 
 namespace DesignPatternsKEKWEditionExempls
 {
@@ -19,10 +20,11 @@ namespace DesignPatternsKEKWEditionExempls
 
             //My ViewModels
             services.AddTransient<MainViewModel>();
+            services.AddScoped<FirstPageViewModel>();
 
 
             // My service
-            //services.AddSingleton<NavigationService>();
+            services.AddSingleton<NavigationService>();
             //services.AddSingleton<EventBus>();
             //services.AddSingleton<MessageBus>();
 
@@ -35,6 +37,8 @@ namespace DesignPatternsKEKWEditionExempls
         }
 
         public MainViewModel MainViewModel => _provaider.GetRequiredService<MainViewModel>();
+
+        public FirstPageViewModel FirstPageViewModel => _provaider.GetRequiredService<FirstPageViewModel>();
 
     }
 }
