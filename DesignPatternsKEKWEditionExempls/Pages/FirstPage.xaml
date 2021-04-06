@@ -9,6 +9,15 @@
       Title="FirstPage">
 
     <Grid>
-        <TextBlock Text="Hi!" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Эта программа создана для просмотра"
+                   FontSize="25"/>
+            <TextBlock Text="работы патернов и сервисов,"
+                   FontSize="25"/>
+            <TextBlock Text="а так же для придостовления информаций"
+                   FontSize="25"/>
+            <TextBlock Text="по ним."
+                   FontSize="25"/>
+        </StackPanel>
     </Grid>
 </Page>

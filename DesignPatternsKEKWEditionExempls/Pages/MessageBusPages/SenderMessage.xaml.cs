@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DesignPatternsKEKWEditionExempls
+namespace DesignPatternsKEKWEditionExempls.Pages.MessageBusPages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для SenderMessage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SenderMessage : Page
     {
-        public MainWindow()
+        public SenderMessage()
         {
             InitializeComponent();
-        }
-
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
         }
     }
 }
